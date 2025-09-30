@@ -1,0 +1,25 @@
+/* General body styling */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading style */
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Input and textarea styling */
+input[type="text"]()

@@ -1,0 +1,19 @@
+-- Create database = applications_db and table = applications in MySQL database 
+
+create database applications_db;
+use applications_db;
+
+
+CREATE TABLE applications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fullname VARCHAR(255),
+    fathername varchar(255),
+    email VARCHAR(255),
+    phone VARCHAR(50),
+    message TEXT
+);
+
+
+drop table applications;
+
+select * from applications
