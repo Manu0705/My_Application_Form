@@ -20,12 +20,13 @@ def index():
 def submit():
     fullname = request.form['fullname']
     fathername = request.form['fathername']
+    mothername = request.form['mothername']
     email = request.form['email']
     phone = request.form['phone']
     message = request.form['message']
 
-    sql = "INSERT INTO applications (fullname, fathername, email, phone, message) VALUES (%s, %s, %s, %s, %s)"
-    values = (fullname, fathername, email, phone, message)
+    sql = "INSERT INTO applications (fullname, fathername, mothername, email, phone, message) VALUES (%s, %s, %s, %s, %s, %s)"
+    values = (fullname, fathername, mothername, email, phone, message)
     cursor.execute(sql, values)
     db.commit()
 
