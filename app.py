@@ -1,3 +1,4 @@
+from email.headerregistry import Address
 from flask import Flask, render_template, request, redirect
 import mysql.connector
 
@@ -21,12 +22,13 @@ def submit():
     fullname = request.form['fullname']
     fathername = request.form['fathername']
     mothername = request.form['mothername']
+    qualification = request.form['qualification']
     email = request.form['email']
     phone = request.form['phone']
     message = request.form['message']
 
-    sql = "INSERT INTO applications (fullname, fathername, mothername, email, phone, message) VALUES (%s, %s, %s, %s, %s, %s)"
-    values = (fullname, fathername, mothername, email, phone, message)
+    sql = "INSERT INTO applications (fullname, fathername, mothername, qualification, email, phone, message) VALUES (%s, %s,%s, %s, %s, %s, %s)"
+    values = (fullname, fathername, mothername, qualification, email, phone, message)
     cursor.execute(sql, values)
     db.commit()
 
