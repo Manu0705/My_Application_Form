@@ -12,6 +12,7 @@ CREATE TABLE applications (
     qualification varchar(255),
     email VARCHAR(255),
     phone VARCHAR(50),
+    location varchar(255),
     message TEXT
 );
 
